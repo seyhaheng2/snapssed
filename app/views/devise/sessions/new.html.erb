@@ -1,0 +1,20 @@
+
+<div class="content-layout">
+<div class="large-7 medium-12 small-12 columns align-right">
+<fieldset>
+		<h3>Have an account?</h3>
+		<hr>
+		<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+		<div class="login-input">
+			  <div class="input-form"><%= f.email_field :email, autofocus: true, placeholder: "Your Email" %></div>
+		      <div class="input-form"><%= f.password_field :password, autocomplete: "off",placeholder: "Password" %></div>
+		      <div class="submit-form"><%= f.submit "Sign in", class: "button tiny success", style: "margin-bottom:0px;" %></div>
+		</div>	
+		  <% if devise_mapping.rememberable? -%>
+		    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %> <%= link_to "Forgot your password?", new_password_path(resource_name), style: "float:right;font-size:14px;padding-right:17px;margin-top:5px;" %></div>
+
+		  <% end -%>		  
+		<% end %>
+</fieldset>
+</div>
+</div>

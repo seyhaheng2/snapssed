@@ -1,0 +1,146 @@
+// Place all the styles related to the store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ @import "font-awesome";
+.content-layout{
+	margin-left: 15%;
+	padding-left: 3.5%;
+	margin-top: 3%;
+}
+h3{
+	margin: 0px;
+	padding: 0px;
+	em{
+		font-size:16px;
+		font-weight: none;
+	}
+}
+.menu{
+	top: 0;
+	bottom: 0;
+	width: 15%;
+	position: fixed;
+	height: 100%;
+	background: #43AC6A;
+	padding:20px;
+}
+
+textarea{
+	height: 100px;
+}
+hr{
+	margin-top:10px;
+	margin-bottom: 15px;
+}
+.align-right{
+	float: right;
+}
+.large-12{
+	padding: 0px;
+}
+
+.top-bar{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.login-input{
+	height: 50px;
+	display: flex;
+	.input-form{
+		width: 44%;
+		padding-right: 1%;
+	}
+	.submit-form{
+		height: 0px;
+	}
+}
+.box{
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+	-webkit-border-radius: 6px;
+	        border-radius: 6px;
+	width: 260px;
+	display: inline-block;
+	margin-right:20px;
+	height:380px;
+	margin-bottom:20px;
+		.image{
+			img{
+				border-radius:3px 3px 0px 0px ;
+				height: 160px;
+				width: 100%;
+			}
+		}
+
+	.box-body{
+		padding:10px 15px;
+		background: #fff;
+
+		.readmore{
+			font-size: 12px;
+			margin-top: 13px;
+			margin-bottom:7px;
+			a{
+				color:#1ABC9C;
+				font-weight: 50;
+				&:hover{
+					color:#16A085;
+					text-decoration:underline;
+				}
+				
+			}
+		}
+			.name{
+			font-family: 'Lato',Helvetica,Arial,sans-serif;
+			color:#16A085;
+			font-weight: 500;
+			font-size:14px;
+			margin-top:5px;
+			text-transform: capitalize;
+			a{
+				color:#1ABC9C;
+				&:hover{
+					text-decoration:underline;
+					color:#16A085;
+				}
+			}
+		}.desc{
+			font-size: 14px;
+			margin:0px;
+			margin-top:10px;
+			line-height: 1.6;
+			overflow: hidden;
+			-ms-text-overflow: ellipsis;
+			    text-overflow: ellipsis;
+		}
+	}
+	.box-footer{
+		margin-top:20px;
+		bottom: 0px;
+		padding: 10px 15px;
+			background: #F6F6F6;
+			a{
+				padding-right:15px;
+				color:#787878;
+				font-size: 14px;
+			}
+			p{
+				font-size:12px;
+				margin:0px;
+				display: inline;
+			
+				a{
+					text-decoration: underline;
+					font-size:12px;
+					text-transform: capitalize;
+					padding:1px;
+				}
+			}
+	}
+}
+.time-form{
+			margin-top:5px;
+			font-size:11px;
+			display: table;
+			float: right;
+}
